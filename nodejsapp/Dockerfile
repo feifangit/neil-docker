@@ -17,6 +17,3 @@ RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 
 ADD nginx.conf /etc/supervisor/conf.d/nginx.conf
 RUN mkdir /var/www
-
-RUN pip install newrelic
-RUN newrelic-admin generate-config 4b9420487abf976d18dd1577b32b887ac6303922 /var/newrelic.ini
