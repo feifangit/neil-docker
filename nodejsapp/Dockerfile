@@ -11,7 +11,6 @@ RUN apt-get install -y python-setuptools python-software-properties software-pro
 RUN easy_install pip
 RUN sudo add-apt-repository -y ppa:nginx/stable
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
-RUN apt-get update
 RUN apt-get install -y gcc make build-essential
 RUN apt-get install -y nginx-full
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
